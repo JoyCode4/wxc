@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Chintamani Hospital" />
+  <meta name="description" content="Chintamani Hospital" />
+  <meta name="rating" content="general" />
+  <meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="7 days" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <title>Welcome to WXC Global Exim</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="js/ie-emulation-modes-warning.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen">
+
+  <script src="js/jquery.minLig.js"></script>
+  <script src="js/superfish.js" type="text/javascript"></script>
+  <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jq162 = jQuery.noConflict(true);
+    jq162(document).ready(function ($) {
+      $("a[data-gal^='prettyPhoto']").prettyPhoto({ theme: 'dark_square' });
+    }); 
+  </script>
+
+  <script language="javascript">
+    function validate() {
+      //alert("aa");
+      var full_name = document.form.full_name.value;
+      var full_name = full_name.replace(/^[\s]+/g, " ");
+      if (full_name == "") {
+        alert("Please Enter Name");
+        document.form.full_name.focus();
+        return false;
+
+      }
+      else
+        if (full_name.length < 5) {
+          alert("Please Enter Full Name");
+          document.form.full_name.focus();
+          return false;
+
+        }
+
+
+      var city = document.form.city.value;
+      var city = city.replace(/^[\s]+/g, " ");
+      if (city == "") {
+        alert("Please Enter City Name");
+        document.form.city.focus();
+        return false;
+
+      }
+
+
+      var mob_no = document.form.mob_no.value;
+      var mob_no = mob_no.replace(/^[\s]+/g, " ");
+      if (mob_no == "") {
+        alert("Please Enter Mobile Number");
+        document.form.mob_no.focus();
+        return false;
+
+      }
+      else
+        if (mob_no.length < 10) {
+          alert("Please Enter Correct Mobile Number.");
+          document.form.mob_no.focus();
+          return false;
+
+        }
+
+      var email = document.form.email.value;
+      var email = email.replace(/^[\s]+/g, " ");
+      if (email == "") {
+        alert("Please Enter Email Id");
+        document.form.email.focus();
+        return false;
+
+      }
+
+      var message = document.form.message.value;
+      var message = message.replace(/^[\s]+/g, " ");
+      if (message == "") {
+        alert("Please Enter Message");
+        document.form.message.focus();
+        return false;
+
+      }
+
+
+      var security_code = document.form.security_code.value;
+      var security_code = security_code.replace(/^[\s]+/g, " ");
+      if (security_code == "") {
+        alert("Please Enter Security Code.");
+        document.form.security_code.focus();
+        return false;
+
+      }
+    }
+
+
+    function validateEmail() {
+      var x = document.forms["form"]["email"].value
+      var atpos = x.indexOf("@");
+      var dotpos = x.lastIndexOf(".");
+      if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+        alert("Please Enter Valid Email Address");
+        document.form.email.value = "";
+        document.form.email.focus;
+      }
+    }
+
+  </script>
+  <script language="JavaScript" type="text/javascript">
+    function intOnly(i) {
+      if (i.value.length > 0) {
+        i.value = i.value.replace(/[^\d]+/g, '');
+      }
+    }
+
+  </script>
+  <script type="text/javascript">
+    function reload_captcha() {
+      //alert("****");
+      $('img[name=imgCaptcha]').prop('src', 'js/CaptchaSecurityImages.php?width=100&amp;height=40&amp;characters=5&' + new Date().getTime());
+
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="container" style="background-image: url(/imagess/bg.jpg);">
+    <!-- Fixed navbar -->
+    <div class="solink"><!--<img src="images/crisil.jpg" >-->mail us on <a
+        href="mailto:worldxchangeglobalexim@gmail.com">worldxchangeglobalexim@gmail.com</a></div>
+
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand logo" href="index.html"><img src="imagess/logo.png"></a>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li class="dropdown">
+              <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+                  class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="sweet_grapes.html">Fresh Grapes</a></li>
+                <li><a href="pineapples.html">Fresh Pineapples</a></li>
+                <li><a href="cashew_nuts.html">Fresh Cashew Nuts</a></li>
+                <li><a href="mangoes_mango_pulp.html">Fresh Mangoes & Mango Pulp</a></li>
+                <li><a href="banana.html">Fresh Banana</a></li>
+                <li><a href="dried_chickpeas.html">Dried Chickpeas</a></li>
+                <li><a href="soyabean.html">Soybean</a></li>
+              </ul>
+            </li>
+
+            <li><a href="feedback.php.html">Feedback</a></li>
+            <li class="active"><a href="contact.php.html">Contact us</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </div>
+    <!-- Fixed navbar -->
+  </div>
+  <div class="header">
+    <div class="container">
+      <div class=" bannerCon">
+        <img src="images/banIn1.jpg">
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="aboutCon">
+        <div class="col-md-8">
+          <h1>Enquiry Form </h1>
+          <p></p>
+          <form method="post" name="form" id="form" autocomplete="off">
+            <div align="center" class="tred"></div>
+            <div class="tWidth">Full Name <span class="tred">*</span></div>
+            <input class="textBox" name="full_name" type="text" id="full_name" tabindex="1" value="" />
+            <p></p>
+            <div class="tWidth">City <span class="tred">*</span></div>
+            <input class="textBox" name="city" type="text" id="city" tabindex="2" value="" />
+            <p></p>
+            <div class="tWidth">Mobile No. <span class="tred">*</span></div>
+            <input name="mob_no" type="text" class="textBox" id="mob_no" tabindex="3" onblur="intOnly(this);"
+              onchange="intOnly(this);" onkeyup="intOnly(this);" maxlength="10" value="" />
+            <p></p>
+            <div class="tWidth">Email <span class="tred">*</span></div>
+            <input name="email" type="text" class="textBox" id="email" tabindex="4" value=""
+              onblur="javascript: return validateEmail()" />
+            <p></p>
+            <div class="tWidth">Message <span class="tred">*</span></div>
+            <textarea name="message" cols="20" rows="2" id="message" class="textBoxMulti" tabindex="5"></textarea>
+            <p></p>
+            <div class="tWidth">Security Code<span class="tred">*</span></div>
+            <input id="security_code" name="security_code" type="text" class="textBox" tabindex="6" />&nbsp;
+            <a onClick="javascript: return reload_captcha();" style="cursor:pointer;">Reload</a>
+            <!--<input type="image" src="images/refresh.png" name="btn_refresh" id="btn_refresh" />-->
+            <p></p>
+            <div id="localcase" class="enquiryBtn"><img
+                src="js/CaptchaSecurityImages.php@width=100&amp;height=40&amp;characters=5" alt="captcha"
+                id="imgCaptcha" name="imgCaptcha" /></div>
+            <p></p>
+            <div class="enquiryBtn"><input name="submit" type="submit" class="btn btn-primary btn-lg  contactbtn"
+                id="submit" tabindex="7" onclick="javascript:return validate();" value="Submit" width="68"
+                height="28" />
+              <input name="reset" type="submit" class="btn btn-primary btn-lg  contactbtn" value="Reset" alt="Reset"
+                width="61" height="28" />
+            </div>
+
+          </form>
+
+        </div>
+        <div class="col-md-4 contleft">
+          <h4>WXC Global Exim</h4>
+
+          <p><strong>OFFICE Address</strong><br>
+            <!--   Mr. Nandkumar Ahire-->
+            Shukhsagar Nagar Bibwewadi Pune, Maharashtra, India.
+            <hr>
+            <strong>Phone : </strong> +91 8830578605
+            <hr>
+            <strong>Mobile :</strong> <br /> +91 8830578605
+
+            <a href="https://wa.me/918830578605" target="_blank" class="whatsapp_icon"
+              style="margin-left: 3%;display: inline-block;">
+              <img src="images/whatsapp.png" width="30" />
+            </a>
+            <hr>
+            <!-- <strong>TeleFax : </strong> +91 253 2315295.
+<hr> -->
+            <strong>Email us :</strong><br>
+            <!---->
+            <a href="mailto:worldxchangeglobalexim@gmail.com">worldxchangeglobalexim@gmail.com</a>
+            <!-- <a href="mailto:sales@jayagroexport.com">sales@jayagroexport.com</a>
+            <a href="mailto:nandkumar.ahire@jayagroexport.com">nandkumar.ahire@jayagroexport.com</a> -->
+            <!--
+<a href="mailto:kunal.desale@jayagroexport.com">kunal.desale@jayagroexport.com</a>
+<a href="mailto:nandkumar.ahire@jayagroexport.com">nandkumar.ahire@jayagroexport.com</a>
+<a href="mailto:pankaj.patil@jayagroexport.com">pankaj.patil@jayagroexport.com</a>
+<a href="mailto:rohit.deshmukh@jayagroexport.com">rohit.deshmukh@jayagroexport.com</a>-->
+            <hr>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>GST Certificate </h2>
+          <a class="lightbox-image" href="images/certificates/GST CERTIFICATE-1.jpg" data-gal="prettyPhoto[prettyPhoto]"
+            data-lightbox="cert">
+            <img src="images/certificates/GST CERTIFICATE-1.jpg" width="150px" height="200px">
+          </a>
+          <a class="lightbox-image" href="images/certificates/GST CERTIFICATE-1.jpg" data-gal="prettyPhoto[prettyPhoto]"
+            data-lightbox="cert">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <h2>Certificate of IEC </h2>
+          <a class="lightbox-image" href="images/certificates/certificateOfIEC.jpg" data-gal="prettyPhoto[prettyPhoto]"
+            data-lightbox="cert1">
+            <img src="images/certificates/certificateOfIEC.jpg" width="150px" height="200px">
+          </a>
+          <a class="lightbox-image" href="images/certificates/certificateOfIEC.jpg" data-gal="prettyPhoto[prettyPhoto]"
+            data-lightbox="cert1">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <h2>RCMC </h2>
+          <a class="lightbox-image" href="images/certificates/Registration-cum Membership Certificate-1.jpg"
+            data-gal="prettyPhoto[prettyPhoto]" data-lightbox="cert3">
+            <img src="images/certificates/Registration-cum Membership Certificate-1.jpg" width="150px" height="200px">
+          </a>
+          <a class="lightbox-image" href="images/certificates/Registration-cum Membership Certificate-1.jpg"
+            data-gal="prettyPhoto[prettyPhoto]" data-lightbox="cert3">
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <h2>Udyam Registration</h2>
+          <a class="lightbox-image" href="images/certificates/Print _ Udyam Registration Certificate-1.jpg"
+            data-gal="prettyPhoto[prettyPhoto]" data-lightbox="cert4">
+            <img src="images/certificates/Print _ Udyam Registration Certificate-1.jpg" width="150px"
+              height="200px"></a>
+          <a class="lightbox-image" href="images/certificates/Print _ Udyam Registration Certificate-1.jpg"
+            data-gal="prettyPhoto[prettyPhoto]" data-lightbox="cert4">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="middle1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Other Certification </h2>
+          <a class="lightbox-image" href="images/certificates/Aditya Ghorpade..jpg" data-gal="prettyPhoto1[prettyPhoto]"
+            data-lightbox="cert5">
+            <img src="images/certificates/Aditya Ghorpade..jpg" width="200px" height="150px"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="innerCon">
+    <div class="container">
+
+      <div class="col-md-5"><span class="follow">follow us on</span>
+        <div class="text-center center-block">
+
+          <a href="https://www.facebook.com/profile.php?id=61555487227154&mibextid=2JQ9oc" target="_blank"><i
+              id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+
+          <a href="https://www.instagram.com/wxc.global.exim" target="_blank"><i id="social"
+              class="fa fa-instagram fa-3x"></i></a>
+          <!--  <a href="#"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a> -->
+          <a href="https://wa.me/918830578605" target="_blank" class="whatsapp_icon">
+            <img src="images/whatsapp.png" width="35" />
+          </a>
+
+          <!--              
+          <a href="mailto:bootsnipp@gmail.com"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="col-md-6">
+        <div class="footLinks">
+          <p><a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="aboutus.html">About us</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sweet_grapes.html">Products</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+              href="feedback.php.html">Feedback</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.php.html">Contact
+              us</a> </p>
+          <p>WXC Global Exim | All Rights Reseved </p>
+          <div class="clear"></div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/docs.min.js"></script>
+
+</body>
+
+</html>
